@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
-import '../static/navstyle.css';
-import '../static/style.css';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
@@ -10,8 +8,8 @@ class Navbar extends Component {
         <div className="main">
           <div className="sub-main">
             <div className="nav-img"></div>
-            <div className="tiles">
-              <div className="dashboard">
+            <nav className="tiles">
+              <Link className="dashboard" to="/dashboard">
                 <div className="dash-vct">
                   <svg
                     width="24"
@@ -51,8 +49,8 @@ class Navbar extends Component {
                   </svg>
                 </div>
                 <span className="dash-text">Dashboard</span>
-              </div>
-              <div className="apprenterships">
+              </Link>
+              <Link className="apprenterships" to="/apprenterships">
                 <div className="dash-vct">
                   <svg
                     width="24"
@@ -85,8 +83,8 @@ class Navbar extends Component {
                   </svg>
                 </div>
                 <span className="app-text">Apprenterships</span>
-              </div>
-              <div className="internships">
+              </Link>
+              <Link className="internships" to="/internships">
                 <div className="dash-vct">
                   <svg
                     width="24"
@@ -126,8 +124,8 @@ class Navbar extends Component {
                   </svg>
                 </div>
                 <span className="int-text">Internships</span>
-              </div>
-              <div className="jobs">
+              </Link>
+              <Link className="jobs" to="/jobs">
                 <div className="dash-vct">
                   <svg
                     width="24"
@@ -179,8 +177,8 @@ class Navbar extends Component {
                   </svg>
                 </div>
                 <span className="jobs-text">Jobs</span>
-              </div>
-              <div className="settings">
+              </Link>
+              <Link className="settings" to="/settings">
                 <div className="dash-vct">
                   <svg
                     width="24"
@@ -216,14 +214,15 @@ class Navbar extends Component {
                   </svg>
                 </div>
                 <span className="settings-text">Settings</span>
-              </div>
-            </div>
+              </Link>
+            </nav>
           </div>
           <div className="namebar">
             <div className="namebar-pix"></div>
             <span className="namebar-name">Fadeni Mayowa</span>
           </div>
         </div>
+        {this.props.children}
       </div>
     );
   }

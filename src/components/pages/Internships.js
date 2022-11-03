@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
-import '@fontsource/space-grotesk';
-import '../static/style.css';
+import { Link } from 'react-router-dom';
 
 class Internships extends Component {
   render() {
@@ -10,7 +8,7 @@ class Internships extends Component {
         <div className="internWrap">
           <div className="internWrap-header">
             <span className="internWrap-text">Internships</span>
-            <a href="#">
+            <Link to="#">
               <div className="internWrap-subhead">
                 <div className="internWrap-subhead-vct">
                   <svg
@@ -54,7 +52,7 @@ class Internships extends Component {
                   Create New Internship
                 </span>
               </div>
-            </a>
+            </Link>
           </div>
           <div className="internWrap-main">
             <div className="internWrap-main-top">

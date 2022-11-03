@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/space-grotesk');
+
 .main {
   width: 229px;
   height: 950px;
@@ -21,7 +23,7 @@
   position: absolute;
   left: 14.5px;
   top: 0px;
-  background-image: url(./images/radicallx_black_logo_1.png);
+  background-image: url(../images/radicallx_black_logo_1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
