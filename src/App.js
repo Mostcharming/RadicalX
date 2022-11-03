@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Routes, Route, Link, Redirect } from 'react-router-dom';
+import { Routes, Route, Redirect } from 'react-router-dom';
 
 import Navbar from './components/pages/Navbar';
 import Internships from './components/pages/Internships';
+import Notfound from './components/pages/notfound';
 
 class App extends Component {
   render() {
@@ -20,7 +21,7 @@ class App extends Component {
           path="/dashboard"
           element={
             <Navbar>
-              <Internships />
+              <Notfound />
             </Navbar>
           }
         />
@@ -28,7 +29,7 @@ class App extends Component {
           path="/apprenterships"
           element={
             <Navbar>
-              <Internships />
+              <Notfound />
             </Navbar>
           }
         />
@@ -44,7 +45,7 @@ class App extends Component {
           path="/jobs"
           element={
             <Navbar>
-              <Internships />
+              <Notfound />
             </Navbar>
           }
         />
@@ -52,7 +53,7 @@ class App extends Component {
           path="/settings"
           element={
             <Navbar>
-              <Internships />
+              <Notfound />
             </Navbar>
           }
         />
