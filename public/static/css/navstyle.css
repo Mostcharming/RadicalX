@@ -37,17 +37,18 @@
 a:hover {
   background: rgba(102, 95, 239, 0.2);
   border: 1px solid #793ef5;
-  transition: 0.2s ease;
+  transition: 0.15s ease;
   transform: scale(1.07);
+}
+a {
+  stroke: #1e1e1e;
 }
 a.active {
   background: rgba(102, 95, 239, 0.2);
   border: 1px solid #793ef5;
+  stroke: #793ef5;
 }
 a.active span {
-  color: #793ef5;
-}
-a.active .stroke {
   color: #793ef5;
 }
 .dashboard {
