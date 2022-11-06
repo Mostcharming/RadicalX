@@ -39,6 +39,7 @@ a:hover {
   border: 1px solid #793ef5;
   transition: 0.15s ease;
   transform: scale(1.07);
+  stroke: #793ef5;
 }
 a {
   stroke: #1e1e1e;

@@ -1,0 +1,283 @@
+@import url('https://fonts.cdnfonts.com/css/space-grotesk');
+
+.subbar {
+  border: 1px solid #d0d4da;
+  border-radius: 20px;
+  width: 1466px;
+  height: 60px;
+  position: absolute;
+  left: 23px;
+  top: 118px;
+}
+.subbar-iconText {
+  width: 210px;
+  height: 24px;
+  position: absolute;
+  left: 24px;
+  top: 18px;
+}
+.subbar-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.subbar-text {
+  color: #1e1e1e;
+  width: 178px;
+  height: 24px;
+  position: absolute;
+  left: 32px;
+  top: 0px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.subbar-iconText.guide {
+  left: 517px;
+  top: 18px;
+  width: 164px;
+  opacity: 0.3;
+}
+.subbar-text.guide {
+  width: 132px;
+}
+.subbar-iconText.surveys {
+  opacity: 0.3;
+  width: 96px;
+  height: 24px;
+  left: 964px;
+  top: 18px;
+}
+.subbar-text.surveys {
+  width: 64px;
+}
+.subbar-iconText.settings {
+  opacity: 0.3;
+  width: 99px;
+  height: 24px;
+  left: 1343px;
+  top: 18px;
+}
+.subbar-text.settings {
+  width: 67px;
+}
+.mainbar {
+  filter: drop-shadow(0px 12px 34px rgba(0, 0, 0, 0.04));
+  width: 1466px;
+  height: 80px;
+  position: absolute;
+  left: 23px;
+  top: 20px;
+}
+.mainbar-back {
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+  border-radius: 30px 0px 0px 30px;
+}
+.mainbar-back-iconText {
+  width: 80px;
+  height: 28px;
+  position: absolute;
+  left: 24px;
+  top: 26px;
+}
+.mainbar-back-icon {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.subbar-text.mainbarback {
+  width: 44px;
+  left: 36px;
+  top: 2px;
+  font-size: 18px;
+}
+.mainbar-mid {
+  width: 866px;
+  height: 80px;
+  position: absolute;
+  left: 300px;
+  top: 0px;
+  background-color: #ffffff;
+}
+.subbar-text.mainbarmid {
+  font-weight: 600;
+  font-size: 28px;
+  left: 299px;
+  top: 28px;
+  width: 268px;
+}
+.mainbar-back.nxtbtn {
+  left: 1166px;
+  border-radius: 0px 30px 30px 0px;
+}
+.cont-btn {
+  background-color: #e2e6eb;
+  border-radius: 12px;
+  border: 0px;
+  width: 219px;
+  height: 44px;
+  position: absolute;
+  left: 57px;
+  top: 18px;
+}
+.subbar-text.mainbarcont {
+  color: #828282;
+  letter-spacing: 0.4px;
+  font-size: 14px;
+  line-height: 20px;
+  left: 16px;
+  top: 12px;
+  width: 159px;
+  height: 20px;
+}
+.mainbar-nxticon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 183px;
+  top: 12px;
+}
+.sidebar {
+  width: 654px;
+  height: 696px;
+  position: absolute;
+  left: 23px;
+  top: 212px;
+}
+.sidebar-tiles {
+  width: 654px;
+  height: 64px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.sidebar-tiles.desc {
+  top: 80px;
+}
+.sidebar-tiles.loc {
+  top: 160px;
+}
+.sidebar-tiles.ben {
+  top: 240px;
+}
+.sidebar-tiles.intro {
+  top: 320px;
+}
+.sidebar-tiles.ment {
+  top: 400px;
+}
+.sidebar-tiles.recom {
+  top: 480px;
+}
+.sidebar-tiles.web {
+  top: 560px;
+}
+.sidebar-tiles.add {
+  width: 606px;
+  height: 56px;
+  left: 48px;
+  top: 640px;
+  border: 1px dashed #793ef5;
+  border-radius: 12px;
+}
+.sidebar-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+.sidebar-tile {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  width: 606px;
+  height: 64px;
+  position: absolute;
+  left: 48px;
+  top: 0px;
+}
+.sidebar-icon2text {
+  width: 514px;
+  height: 24px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.sidebar-text {
+  color: #333333;
+  width: 81px;
+  height: 18px;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}
+.sidebar-text.desc {
+  width: 101px;
+}
+.sidebar-text.loc {
+  width: 77px;
+}
+.sidebar-text.ben {
+  width: 74px;
+}
+.sidebar-text.intro {
+  width: 95px;
+}
+.sidebar-text.ment {
+  width: 128px;
+}
+.sidebar-text.reco {
+  width: 182px;
+}
+.sidebar-text.web {
+  width: 198px;
+}
+.check-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 89px;
+  top: 0px;
+}
+.sidebar-tile-arrow {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 562px;
+  top: 20px;
+}
+.sidebar-add-icontext {
+  width: 106px;
+  height: 24px;
+  position: absolute;
+  left: 250px;
+  top: 16px;
+}
+.sidebar-add-icontext.icon {
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 2px;
+}
+.subbar-text.add {
+  width: 80px;
+  color: #793ef5;
+  font-weight: 500;
+}

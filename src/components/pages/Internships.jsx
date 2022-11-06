@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 function Internships() {
@@ -7,7 +6,7 @@ function Internships() {
       <div className="internWrap">
         <div className="internWrap-header">
           <span className="internWrap-text">Internships</span>
-          <Link to="#">
+          <Link to="/newIntern">
             <div className="internWrap-subhead">
               <div className="internWrap-subhead-vct">
                 <svg
