@@ -4,21 +4,23 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Internships from './components/pages/Internships';
 import Notfound from './components/pages/notfound';
-import NewInternWrap from './components/pages/sub-pages/newInternWrap';
-import Description from './components/pages/sub-pages/newIntern-pages/internshipDescription';
+import InternDescription from './components/pages/create-form/internshipDescription';
+import InternshipGuide from './components/pages/create-form/intershipGuide';
+import Settings from './components/pages/create-form/settings';
+import Survey from './components/pages/create-form/surveys';
 
 class App extends Component {
   render() {
     return (
       <Routes>
-        <Route
-          path="/newIntern"
-          element={
-            <NewInternWrap>
-              <Description />
-            </NewInternWrap>
-          }
-        />
+        <Route path="/create/description" element={<InternDescription />} />
+
+        <Route path="/create/guide" element={<InternshipGuide />} />
+
+        <Route path="/create/setting" element={<Settings />} />
+
+        <Route path="/create/survey" element={<Survey />} />
+
         <Route
           path="/"
           element={

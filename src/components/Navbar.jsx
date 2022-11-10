@@ -2,47 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar(props) {
-  const [isActive, setIsActive] = useState(false);
-  const [isActive1, setIsActive1] = useState(false);
-  const [isActive2, setIsActive2] = useState(false);
-  const [isActive3, setIsActive3] = useState(false);
-  const [isActive4, setIsActive4] = useState(false);
-
-  const handleClick = (event) => {
-    setIsActive(!isActive);
-    setIsActive1(false);
-    setIsActive2(false);
-    setIsActive3(false);
-    setIsActive4(false);
-  };
-  const handleClick1 = (event) => {
-    setIsActive(false);
-    setIsActive1(!isActive1);
-    setIsActive2(false);
-    setIsActive3(false);
-    setIsActive4(false);
-  };
-  const handleClick2 = (event) => {
-    setIsActive(false);
-    setIsActive1(false);
-    setIsActive2(!isActive2);
-    setIsActive3(false);
-    setIsActive4(false);
-  };
-  const handleClick3 = (event) => {
-    setIsActive(false);
-    setIsActive1(false);
-    setIsActive2(false);
-    setIsActive3(!isActive3);
-    setIsActive4(false);
-  };
-  const handleClick4 = (event) => {
-    setIsActive(false);
-    setIsActive1(false);
-    setIsActive2(false);
-    setIsActive3(false);
-    setIsActive4(!isActive4);
-  };
+  const [isActive, setActive] = useState(false);
 
   return (
     <div className="all">
@@ -51,9 +11,11 @@ function Navbar(props) {
           <div className="nav-img"></div>
           <nav className="tiles">
             <Link
-              className={`dashboard ${isActive ? 'active' : ''}`}
+              className={`dashboard ${
+                isActive === 'dashboard' ? 'active' : ''
+              }`}
               to="/dashboard"
-              onClick={handleClick}
+              onClick={() => setActive('dashboard')}
             >
               <div className="dash-vct">
                 <svg
@@ -92,9 +54,11 @@ function Navbar(props) {
               <span className="dash-text">Dashboard</span>
             </Link>
             <Link
-              className={`apprenterships ${isActive1 ? 'active' : ''}`}
+              className={`apprenterships ${
+                isActive === 'apprentership' ? 'active' : ''
+              }`}
               to="/apprenterships"
-              onClick={handleClick1}
+              onClick={() => setActive('apprentership')}
             >
               <div className="dash-vct">
                 <svg
@@ -127,9 +91,11 @@ function Navbar(props) {
               <span className="app-text">Apprenterships</span>
             </Link>
             <Link
-              className={`internships ${isActive2 ? 'active' : ''}`}
+              className={`internships ${
+                isActive === 'internships' ? 'active' : ''
+              }`}
               to="/internships"
-              onClick={handleClick2}
+              onClick={() => setActive('internships')}
             >
               <div className="dash-vct">
                 <svg
@@ -168,9 +134,9 @@ function Navbar(props) {
               <span className="int-text">Internships</span>
             </Link>
             <Link
-              className={`jobs ${isActive3 ? 'active' : ''}`}
+              className={`jobs ${isActive === 'jobs' ? 'active' : ''}`}
               to="/jobs"
-              onClick={handleClick3}
+              onClick={() => setActive('jobs')}
             >
               <div className="dash-vct">
                 <svg
@@ -220,9 +186,9 @@ function Navbar(props) {
               <span className="jobs-text">Jobs</span>
             </Link>
             <Link
-              className={`settings ${isActive4 ? 'active' : ''}`}
+              className={`settings ${isActive === 'settings' ? 'active' : ''}`}
               to="/settings"
-              onClick={handleClick4}
+              onClick={() => setActive('settings')}
             >
               <div className="dash-vct">
                 <svg

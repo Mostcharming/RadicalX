@@ -6,7 +6,7 @@ function Internships() {
       <div className="internWrap">
         <div className="internWrap-header">
           <span className="internWrap-text">Internships</span>
-          <Link to="/newIntern">
+          <Link to="/create/description">
             <div className="internWrap-subhead">
               <div className="internWrap-subhead-vct">
                 <svg

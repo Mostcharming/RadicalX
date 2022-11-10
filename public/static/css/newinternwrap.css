@@ -1,5 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/space-grotesk');
-
 .subbar {
   border: 1px solid #d0d4da;
   border-radius: 20px;
@@ -25,7 +23,7 @@
 }
 .subbar-text {
   color: #1e1e1e;
-  width: 178px;
+  width: 240px;
   height: 24px;
   position: absolute;
   left: 32px;
@@ -140,7 +138,7 @@
   line-height: 20px;
   left: 16px;
   top: 12px;
-  width: 159px;
+  width: 160px;
   height: 20px;
 }
 .mainbar-nxticon {
@@ -164,6 +162,7 @@
   left: 0px;
   top: 0px;
 }
+
 .sidebar-tiles.desc {
   top: 80px;
 }
@@ -207,11 +206,15 @@
   width: 606px;
   height: 64px;
   position: absolute;
-  left: 48px;
+  left: 46px;
   top: 0px;
 }
+.sidebar-tile.active {
+  box-shadow: 0px 24px 34px rgba(0, 0, 0, 0.12);
+  border: 1px solid #793ef5;
+}
 .sidebar-icon2text {
-  width: 514px;
+  /* width: 514px; */
   height: 24px;
   position: absolute;
   left: 20px;
@@ -255,6 +258,13 @@
   left: 89px;
   top: 0px;
 }
+.check-icon.des {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 115px;
+  top: -3px;
+}
 .sidebar-tile-arrow {
   opacity: 0.5;
   width: 24px;
@@ -262,6 +272,9 @@
   position: absolute;
   left: 562px;
   top: 20px;
+}
+.sidebar-tile-arrow.active {
+  opacity: 1;
 }
 .sidebar-add-icontext {
   width: 106px;
@@ -280,4 +293,38 @@
   width: 80px;
   color: #793ef5;
   font-weight: 500;
+}
+.Pops {
+  width: 789px;
+  height: 200px;
+  position: absolute;
+  left: 700px;
+  top: 212px;
+}
+.Pops.category {
+  background-color: #ffffff;
+  border-radius: 20px;
+  left: 0px;
+  top: 0px;
+}
+.Pops.description {
+  background-color: #ffffff;
+  border-radius: 20px;
+  left: 0px;
+  top: 0px;
+  width: 789px;
+  height: 287px;
+}
+.Pops.text {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  color: #333333;
+  width: 108px;
+  height: 18px;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 18px;
 }
